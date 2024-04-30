@@ -6,7 +6,7 @@ import AddButton from "../Componentes/AddButton";
 
 export default async function Nosotros() {
   
-    const response = await fetch(`http://${process.env.VERCEL_URL}/api/nosotros/`, {
+    const response = await fetch(`http://${process.env.VERCEL_URL}/api/contactos/`, {
       cache: "no-store",
     });
     
