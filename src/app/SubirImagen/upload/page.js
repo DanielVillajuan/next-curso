@@ -8,7 +8,6 @@ export default function SubirImagen(){
         const refStorage = ref(storage, "imagen")
         const fileSnapshot = await uploadBytes(refStorage, e.target.files[0])
         const fileUrl = await getDownloadURL(fileSnapshot.ref)
-        console.dir(fileUrl)
     }
 
     return (
